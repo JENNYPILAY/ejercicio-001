@@ -1,6 +1,9 @@
 
 console.log("inicio del programa");
-var equipo= prompt ("cual es tu equipo de futbol favorit0?");
+
+var clave = prompt ("hola ususario,Ingrese su clave!");
+console.log ("La longitud de la clave es:" + clave.length);
+var equipo=prompt ("cual es tu equipo favorito");
 document.write("</h1> el quipo favorito "+equipo+"</h1>");
 
 alert ("hola javascript");
