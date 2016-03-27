@@ -1,44 +1,9 @@
 
-console.log("inicio del programa");
-var numerousuario=prompt("ingrese numero del 1 al 5:");
-var numerodeadivinar= 3;
-if (parseInt(numerousuario)===numerodeadivinar)
+function numeroAlAzarHastalimite(limite)
 {
-	adivinacorrectamente = true;
+	var num=Math.floor(Math.random()*limite)+1;
+	return num;
 }
-else if  (parseInt(numerousuario) > numerodeadivinar)
-{
-	alert("el numero que inghresaste es mayor");
-	var nuevaoportunidad = prompt("intento de nuevo,ingrese un numero del 1 al 5");
-	if ((parseInt(nuevaoportunidad)===numerodeadivinar))
-	{
-		adivinacorrectamente = true;
-	}
-	else
-	{
-		adivinacorrectamente = false;
+	var numAzar = numeroAlAzarHastalimite(100);
 
-	}
-}
-else if ((parseInt(numerousuario)<numerodeadivinar))
-{
-	alert("el numero que inghresaste es menor");
-	var nuevaoportunidad = prompt("intento de nuevo,ingrese un numero del 1 al 5");
-	if (parseInt(nuevaoportunidad)===numerodeadivinar)
-	{
-		adivinacorrectamente = true;
-	}
-	else
-	{
-		adivinacorrectamente = false;
-}
-}
-if (adivinacorrectamente)
-{
-document.write("<p>ADIVINASTE</p>");
-}
-else
-{
-document.write("<p>NO ADIVINASTE .intentalo denuevo</p>");
-}
-console.log ("fin del programa");
+alert("El numero al azar es: "+numAzar);

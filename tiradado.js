@@ -1,11 +1,11 @@
-function tiradados(){
-	var dado = Math.floor(Math.random() * 6) + 1;
-	return dado;
+function numeroAlAzarHastalimite(limite)
+{
+	var num=Math.floor(Math.random()*limite)+1;
+	return num;
 }
-alert("tiramos 3 dados: ");
-alert ("el dado dice:" + tiradados());
-var multiplo = 2 + tiradado ();
-alert ("el multiplode bonus es:" + multiplo);
-tiradados();
+	varnumAzar = numeroAlAzarHastalimite(100);
+
+alert("El numero al azar es: "+numAzar);
+
 
 
