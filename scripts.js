@@ -1,7 +1,8 @@
 
 
 console.log ("inicio del programa");
-var dado = Math.floor(Math.random() * 6) + 1; 
-alert("Dado dice:" + dado);
+var usuarionumero =prompt ("INGRESE UN NUMERO:"); 
+var aleatorio = Math.floor(Math.random() *usuarionumero) + 1; 
+alert("El número aleatorio:" +aleatorio);
 console.log("programa completo");
 
