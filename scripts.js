@@ -2,7 +2,7 @@
 function saludo()
 {
 	
-	var mensaje= "hola a todos"
+  mensaje= "hola a todos"
 	alert (mensaje);
 }
 var mensaje= "chao"
