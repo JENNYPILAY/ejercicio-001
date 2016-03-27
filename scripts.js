@@ -1,5 +1,4 @@
 
-
 console.log("inicio del programa");
 var numerousuario=prompt("ingrese numero del 1 al 5:");
 var numerodeadivinar= 3;
