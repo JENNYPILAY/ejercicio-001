@@ -1,8 +1,16 @@
-var verbo=prompt ("Ingreso un verbo");
-var adjetivo=prompt ("Ingreso un adjetivo");
-var sustantivo=prompt ("Ingreso un sustantivo");
-document.write("</h1> les contamos un cuento </h1>");
-document.write("<p>E1 " + sustantivo + " " + adjetivo + " " + verbo + " desesperadamente</p> ");
-document.write("<p> " + verbo + " el " + sustantivo + " " + adjetivo + " desesperadamente</p> ");
-document.write("<p> desesperadamente el "+ adjetivo + " " + sustantivo + " " + verbo +"</p>");
+
+console.log (inicio del programa");
+var preguntaes = 3;
+var preguntasfaltantes ="quedan"+ preguntas + "preguntas";
+alert ("este es el juego del cuenta cuentos.sigue las instrucciones.");
+var sustantivo1= prompt ("ingresa sustantivo." +preguntasfaltantes);
+preguntas=preguntas -1;
+preguntasfaltantes ="quedan"+ preguntas +"preguntas";
+var adjetivo=prompt("estimado ususario ingrese un adjetivo."+preguntasfaltantes);
+preguntas=preguntas -1;
+preguntasfaltantes ="quedan"+ preguntas +"preguntas";
+var verbo= prompt("estimado usuario,ingrese un verbo."+preguntasfaltantes);
+var cuento ="el "+adjetivo+" "+sustantivo1*" queria "+verbo+""
+document.write(<h1>cuenta cuentos </p>);
+console.log("fin del programa")
 
