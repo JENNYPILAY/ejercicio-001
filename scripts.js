@@ -1,25 +1,21 @@
 
-
-function numALAzar(lim1,lim2)
+function numeroAlAzarEntreLimites(lim1,lim2)
 {
-	var num = Math.floor(Math.random()*(lim1-lim2)) + lim2;
-    return num;
+	var num=Math.floor(Math.random()*(lim1-lim2))+lim2;
+	return num;
+}
+var limiteSuperior=prompt("Ingrese limite superior: ");
+var limiteInferior=prompt("Ingrese limite Inferior: ");
+
+if (isNaN(limiteInferior) || isNaN(limiteSuperior))
+{
+	throw Error("Numero no es valido");
 }
 
-var limit1 = parseInt(prompt("ingrese primer limite mayor:"));
-if (isNaN(limit1))
+var contador = 0;
+while (contador<10)
 {
-	throw Error("NO ES NUMERO VALIDO");
-} 
-var limit2  = parseInt(prompt("ingrese segundo limite menor:"));
-if (isNaN(limit2))
-{
-	throw Error("NO ES UN NUMERO VALIDO");
+var randomico = numeroAlAzarEntreLimites(parseInt(limiteSuperior),parseInt(limiteInferior));
+document.write(randomico+" ");
+contador++;
 }
-var numero = numALAzar(limit1,limit2);
-alert("los numeros al azar son: " +numero);
-
-
-
-
-
