@@ -1,16 +1,11 @@
 
-function max(num1,num2)
+function saludo()
 {
-	if (parseInt (num1) > parseInt(num2))
-{
-	var numMay = num1;
+	
+	var mensaje= "hola a todos"
+	alert (mensaje);
 }
-else
-{
-	var numMay = num2;
-}
-
-	return numMay;
-}
-	var result = max(8,5);
-	alert("El numero al mayor es: "+result);
+var mensaje= "chao"
+saludo();
+alert (mensaje);
+saludo();
