@@ -1,13 +1,10 @@
 
-console.log("inicio del programa");
 
-var clave = prompt ("hola usuario,Ingrese su clave!");
-console.log ("La longitud de la clave es:" + clave.length);
-var equipo=prompt ("cual es tu equipo favorito");
-document.write("</h1> el quipo favorito "+equipo+"</h1>");
+console.log ("inicio del programa");
+var peliculasvistas= prompt("cuantas peliculas has visto en el mes");
+var seriesvistas=prompt ("cuantas series has visto en el mes");
+var tiempopantalla= parseInt(peliculasvistas)+ parseInt (seriesvistas);
+alert ("wow! Has visto" + tiempopantalla + "veces minimo la pantalla");
 
-alert ("hola javascript");
-document.write("<h1> Hola javascript! </h1> ");
-alert("gracias por visitar");
-console.log("fin del programa");
+console.log("programa completo");
 
