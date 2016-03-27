@@ -1,9 +1,7 @@
 
 function numeroAlAzarEntreLimites(lim1,lim2)
 {
-	var num=Math.floor(Math.random()*(lim1-lim2))+lim2;
-	return num;
-}
+
 var limiteSuperior=prompt("Ingrese limite superior: ");
 var limiteInferior=prompt("Ingrese limite Inferior: ");
 
