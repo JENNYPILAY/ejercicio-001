@@ -1,5 +1,3 @@
-
-
 var preguntas = [
 { pregunta: "quien canta la salsa GOTAS DE LLUVIA?", respuesta: "grupo niche"},
 { pregunta: "quien descubrio AMERICA?", respuesta: "SIMON BOLIVAR"},
@@ -40,7 +38,7 @@ function imprimirRespuestas(respondidaCorrectamente)
 	return stringRespuestas;
 }
 
-
+//Imprime todas el cuestionario, incluyendo respuestas correctas e incorrectas
 function imprimirCuestionario()
 {
 	html += '<h3 style="color:green;">Respuestas Correctas</h3>';
@@ -52,11 +50,13 @@ function imprimirCuestionario()
 
 function printHTML(mensaje)
 {
-	
+	//document.write(html);
+	//Reemplazado por Get elementByID para tomar el nodo (Node Object) en el DOM
 	var outputDiv = document.getElementById("output");
 	outputDiv.innerHTML = mensaje;
 }
 
+//Preguntamos y procesamos las respuestas
 for(var i=0; i<preguntas.length; i++)
 {
 	var respuestaSimple;
