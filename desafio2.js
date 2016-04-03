@@ -1,11 +1,13 @@
 var preguntas = [
-{ pregunta: "quien canta la salsa GOTAS DE LLUVIA?", respuesta: "grupo niche"},
-{ pregunta: "quien descubrio AMERICA?", respuesta: "SIMON BOLIVAR"},
-{ pregunta: "de que color es el caballo de simon bolivar?", respuesta: "blanco"}, //http://www.ambiente.gob.ec/areas-protegidas-3/
-{ pregunta: "Cuantos van en el carro de coyotito?", respuesta: "5"},
-{ pregunta: "cuantos van en el carro de los chispas?", respuesta: "3"}
+{ pregunta: "Cuantos goles le metio Barcelona a Liga?", respuesta: 5},
+{ pregunta: "quien descubrio America?", respuesta: "Cristobal Colon"},
+{ pregunta: "Cuantos lados tiene un cuadrilatero?", respuesta: 4}, 
+{ pregunta: "Cuantos años lleva Correa en el poder ejecutivo?", respuesta: 9},
+{ pregunta: "cuantos van en el carro de los chispas?", respuesta: 3}
 ];
-//Imprime las respuestas, distinguiendo del tipo, correcta o incorrecta
+
+}
+
 function imprimirRespuestas(respondidaCorrectamente)
 {
 	var stringRespuestas = '';
@@ -15,10 +17,10 @@ function imprimirRespuestas(respondidaCorrectamente)
 		if(respondidaCorrectamente==preguntas[i]["acerto"])
 		{
 			contRespuestas++;
-			stringRespuestas += "<p><b>" + preguntas[i].pregunta + "</b><br>" + 
+			stringRespuestas += "<p> " + preguntas[i].pregunta + "<br>" + 
 			preguntas[i].respuestaUsuario + "</p>";		
 		
-			//Si la respuesta es incorrecta, agregar las respuesta verdadera	
+			
 			if(!preguntas[i].acerto)
 			{
 			stringRespuestas+= "<i>La respuesta correcta era: " + 
@@ -38,25 +40,33 @@ function imprimirRespuestas(respondidaCorrectamente)
 	return stringRespuestas;
 }
 
-//Imprime todas el cuestionario, incluyendo respuestas correctas e incorrectas
+
 function imprimirCuestionario()
 {
-	html += '<h3 style="color:green;">Respuestas Correctas</h3>';
+	html += '<h2 style="color:#64DD17;">Respuestas Correctas</h2>';
 	html += imprimirRespuestas(true);
-	html += '<h3 style="color:red;">Respuestas Incorrectas</h3>';
+	html += '<h2 style="color:#FF9800;">Respuestas Incorrectas</h2>';
 	html += imprimirRespuestas(false);
 	return html;
 }
+{
+
+}
+
+
+
+
+
+
 
 function printHTML(mensaje)
 {
-	//document.write(html);
-	//Reemplazado por Get elementByID para tomar el nodo (Node Object) en el DOM
+	
+	
 	var outputDiv = document.getElementById("output");
 	outputDiv.innerHTML = mensaje;
 }
 
-//Preguntamos y procesamos las respuestas
 for(var i=0; i<preguntas.length; i++)
 {
 	var respuestaSimple;
@@ -79,7 +89,7 @@ for(var i=0; i<preguntas.length; i++)
 	}
 }
 
-var html = "<h1>Pregunta Pregunton</h1>";
-html += "<h2>Aqui el resultado de sus respuestas</h2>"
-html += imprimirCuestionario();
+var html = "<h1> <br>ADIVINA ---ADIVINADOR</br></h1>";
+html += "<h1><br>ESTE ES EL  resultado de sus respuestas</br></h1>"
+html = imprimirCuestionario();
 printHTML(html);
