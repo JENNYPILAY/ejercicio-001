@@ -1,19 +1,13 @@
 
-function numeroAlAzarEntreLimites(lim1,lim2)
-{
+console.log ("inicio del programa9");
+var html = "";
+for (var i=1; i<=10; i++)
+	{
+		html += "<div>"+i+"</div>";
 
-var limiteSuperior=prompt("Ingrese limite superior: ");
-var limiteInferior=prompt("Ingrese limite Inferior: ");
-
-if (isNaN(limiteInferior) || isNaN(limiteSuperior))
-{
-	throw Error("Numero no es valido");
 }
+document.write(html);
+console.log("programa completado")
 
-var contador = 0;
-while (contador<10)
-{
-var randomico = numeroAlAzarEntreLimites(parseInt(limiteSuperior),parseInt(limiteInferior));
-document.write(randomico+" ");
-contador++;
-}
+
+
